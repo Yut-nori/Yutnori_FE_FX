@@ -1,6 +1,9 @@
 # === IntelliJ IDEA ===
 # 무시
 .idea/
+build/
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
 
 # 포함 예외 처리
 !.idea/modules.xml

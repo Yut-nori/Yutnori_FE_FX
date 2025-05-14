@@ -1,40 +1,33 @@
 plugins {
     id 'java'
     id 'application'
-    id 'com.github.johnrengelman.shadow' version '8.1.1' // ✅ 추가
+    id 'org.openjfx.javafxplugin' version '0.1.0'
 }
 
 repositories {
     mavenCentral()
 }
 
-
 group = 'com.example'
 version = '1.0'
 
+javafx {
+    version = "21"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
 dependencies {
-//    implementation project(':backend')
-    implementation 'org.openjfx:javafx-controls:21'
-    implementation 'org.openjfx:javafx-fxml:21'
+    // 별도 수동 지정 불필요, openjfx plugin이 알아서 처리
 }
 
 application {
-    mainClass = 'Main'
+    mainClass = 'MainFX'
 }
-
 
 run {
-    jvmArgs = [
-            '--add-modules', 'javafx.controls,javafx.fxml'
-    ]
+    // jvmArgs 불필요, plugin이 자동으로 설정
 }
 
-jar {
-    manifest {
-        attributes 'Main-Class': application.mainClass.get()
-    }
-}
-
-shadowJar {
-    archiveClassifier.set('all') // frontend-1.0-all.jar로 생성됨
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
 }
