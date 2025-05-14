@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'com.github.johnrengelman.shadow' version '8.1.1' // ✅ 추가
+}
+
+repositories {
+    mavenCentral()
+}
+
+
+group = 'com.example'
+version = '1.0'
+
+dependencies {
+//    implementation project(':backend')
+    implementation 'org.openjfx:javafx-controls:21'
+    implementation 'org.openjfx:javafx-fxml:21'
+}
+
+application {
+    mainClass = 'Main'
+}
+
+
+run {
+    jvmArgs = [
+            '--add-modules', 'javafx.controls,javafx.fxml'
+    ]
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': application.mainClass.get()
+    }
+}
+
+shadowJar {
+    archiveClassifier.set('all') // frontend-1.0-all.jar로 생성됨
+}
