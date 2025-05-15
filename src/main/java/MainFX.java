@@ -1,22 +1,19 @@
 import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
+import gameControl.GameManager;
+import gameControl.GameState;
+import gameControl.ScreenManager;
 
 
 public class MainFX extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Hello JavaFX");
+        primaryStage.setTitle("Yutnori -Team 13");
 
-        Label label = new Label("JavaFX 실행 성공!");
-        StackPane root = new StackPane(label);
-        Scene scene = new Scene(root, 400, 300);
-
-        primaryStage.setScene(scene);
-        primaryStage.show();
+        GameManager gm = new GameManager(new GameState());
+        ScreenManager sm = new ScreenManager(primaryStage, gm);
+        gm.setScreenManager(sm);
     }
 
     public static void main(String[] args) {
