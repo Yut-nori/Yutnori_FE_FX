@@ -33,7 +33,7 @@ public class ScreenManager {
 
     // (1)메인 화면 -> (2)세팅
     public void setting() {
-//        switchScene(new Setting(this));
+        switchScene(new Setting(this));
     }
 
     // (2)세팅 -> (3)윷놀이 시작
@@ -46,7 +46,7 @@ public class ScreenManager {
 //        switchScene(new End(this));
     }
 
-    public GameManager getGm() {
+    public GameManager getGameManager() {
         return gm;
     }
 }
