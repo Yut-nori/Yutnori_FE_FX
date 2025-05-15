@@ -43,7 +43,7 @@ public class ScreenManager {
 
     // (3)윷놀이 시작 -> (4)게임 종료
     public void end() {
-//        switchScene(new End(this));
+        switchScene(new End(this));
     }
 
     public GameManager getGameManager() {

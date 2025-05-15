@@ -1,5 +1,6 @@
 package util;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 
@@ -24,7 +25,7 @@ public class GlobalButtonListener implements EventHandler<ActionEvent> {
     public void handle(ActionEvent event) {
         switch (actionName) {
             case "exit":
-                System.exit(0);
+                Platform.exit();
                 break;
 
             case "settingPage":
