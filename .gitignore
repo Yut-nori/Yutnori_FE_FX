@@ -1,39 +1,45 @@
-# -------------------------------
-# Gradle build files and cache
-# -------------------------------
-.gradle/
+# === IntelliJ IDEA ===
+# 무시
+.idea/
 build/
+.gradle/
 !gradle/wrapper/gradle-wrapper.jar
 
-# Module build outputs
-frontend/build/
-backend/build/
+# 포함 예외 처리
+!.idea/modules.xml
+.idea/misc.xml
+!.idea/Yutnori_FE.iml
 
-# Optional: If you use test folders
-frontend/out/
-backend/out/
 
-# -------------------------------
-# IntelliJ IDEA project files
-# -------------------------------
-.idea/
+# Project module settings
 *.iml
-out/
+!Yutnori_FE.iml
 
-# -------------------------------
-# Eclipse project files (if applicable)
-# -------------------------------
-*.classpath
-*.project
-*.settings/
+# User-specific files
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/**/usage.statistics.xml
+.idea/**/dictionaries
+.idea/**/shelf
 
-# -------------------------------
-# VS Code files (if applicable)
-# -------------------------------
-.vscode/
+# Build output
+/out/
 
-# -------------------------------
-# OS-specific files
-# -------------------------------
+# Logs
+*.log
+
+# Compiled class files
+*.class
+
+# OS-specific
 .DS_Store
 Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# VM crash logs
+hs_err_pid*
+replay_pid*
+
+# === vs code ===
+.vscode
