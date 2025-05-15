@@ -1,5 +1,7 @@
 package screen;
 
+import gameControl.GlobalButtonListener;
+import gameControl.ScreenManager;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;

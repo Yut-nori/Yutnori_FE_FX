@@ -1,4 +1,4 @@
-package util;
+package gameControl;
 
 import javafx.application.Platform;
 import javafx.event.ActionEvent;

@@ -1,11 +1,8 @@
 import javafx.application.Application;
-import javafx.scene.Scene;
-import javafx.scene.control.Label;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-import util.GameManager;
-import util.GameState;
-import util.ScreenManager;
+import gameControl.GameManager;
+import gameControl.GameState;
+import gameControl.ScreenManager;
 
 
 public class MainFX extends Application {

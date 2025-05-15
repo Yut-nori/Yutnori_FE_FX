@@ -1,17 +1,17 @@
 package screen;
 
+import gameControl.GameManager;
+import gameControl.GlobalButtonListener;
+import gameControl.ScreenManager;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import util.*;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
 
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -66,7 +66,7 @@ public class Setting extends Pane {
             gm.getGameState().initiateState(selectedPlayerNum, selectedUnitNum, selectedShapeNum, selectedTest);
 //            gm.apiSetOption(selectedPlayerNum, selectedUnitNum, selectedShapeNum, selectedTest);
 
-//            sm.showGameBoard(primaryStage); // 예: 다음 화면으로 전환
+            sm.gameBoard(); // 예: 다음 화면으로 전환
         }, images);
 
         // [5] 종료 버튼

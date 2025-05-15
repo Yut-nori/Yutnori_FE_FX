@@ -1,5 +1,6 @@
-package util;
+package gameControl;
 
+import gameBoard.GameBoard;
 import screen.End;
 //import screen.GameBoard;
 import screen.Setting;
@@ -38,7 +39,7 @@ public class ScreenManager {
 
     // (2)세팅 -> (3)윷놀이 시작
     public void gameBoard() {
-//        switchScene(new GameBoard(this));
+        switchScene(new GameBoard(this));
     }
 
     // (3)윷놀이 시작 -> (4)게임 종료

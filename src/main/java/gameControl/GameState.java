@@ -1,4 +1,5 @@
-package util;
+package gameControl;
+
 import java.util.*;
 
 public class GameState {

@@ -1,13 +1,6 @@
-package util;
+package gameControl;
 
 import javafx.scene.layout.Pane;
-import util.GameState;
-import util.Phase;
-import util.ScreenManager;
-
-import java.util.Arrays;
-import java.util.EnumSet;
-import java.util.List;
 
 public class GameManager {
 

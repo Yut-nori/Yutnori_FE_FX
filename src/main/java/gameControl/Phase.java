@@ -1,4 +1,4 @@
-package util;
+package gameControl;
 
 public enum Phase {
     BUTTON_CLICK,
