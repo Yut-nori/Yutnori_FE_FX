@@ -1,26 +1,24 @@
 # === IntelliJ IDEA ===
 # 무시
 .idea/
-
-# 포함 예외 처리
-!.idea/modules.xml
-.idea/misc.xml
-!.idea/Yutnori_FE.iml
-
-
-# Project module settings
 *.iml
+
+# 포함 예외 (공유 설정)
+!.idea/modules.xml
+!.idea/misc.xml
 !Yutnori_FE.iml
 
-# User-specific files
+# 사용자별/개인 설정 파일 무시
 .idea/**/workspace.xml
 .idea/**/tasks.xml
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
 
-# Build output
+# === Gradle ===
+/build/
 /out/
+.gradle/
 
 # Logs
 *.log
@@ -38,5 +36,5 @@ desktop.ini
 hs_err_pid*
 replay_pid*
 
-# === vs code ===
-.vscode
+# === VS Code ===
+.vscode/
