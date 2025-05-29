@@ -59,7 +59,7 @@ public class End extends Pane {
         // [4] 버튼 생성
         Button restartButton = ButtonUtil.createButtonIfExists(
                 imageNames, "startButton.png", screenName, 400, 280,
-                new GlobalButtonListener(sm, "setting"), images
+                new GlobalButtonListener(sm, "settingPage"), images
         );
 
         Button exitButton = ButtonUtil.createButtonIfExists(
