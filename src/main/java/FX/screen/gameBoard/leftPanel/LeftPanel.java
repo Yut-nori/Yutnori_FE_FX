@@ -1,9 +1,9 @@
-package screen.gameBoard.leftPanel;
+package FX.screen.gameBoard.leftPanel;
 
 
-import gameControl.GameManager;
+import FX.gameControl.GameManager;
 import javafx.scene.layout.Pane;
-import util.UIConstants;
+import FX.util.UIConstants;
 
 public class LeftPanel extends Pane {
 
@@ -19,7 +19,7 @@ public class LeftPanel extends Pane {
         setPrefSize(UIConstants.LEFT_PANEL_WDITH, UIConstants.FRAME_HEIGHT);
 
         // [3] 윷 결과 패널 생성
-        YutResult yutResult = new YutResult(gm.getGameState().getLastResult());
+        screen.gameBoard.leftPanel.YutResult yutResult = new screen.gameBoard.leftPanel.YutResult(gm.getGameState().getLastResult());
         yutResult.setLayoutX(0);
         yutResult.setLayoutY(0);
         yutResult.setPrefSize(UIConstants.LEFT_PANEL_WDITH, UIConstants.YUT_RESULT_PANEL_HEIGHT);

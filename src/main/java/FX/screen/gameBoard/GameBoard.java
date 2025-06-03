@@ -1,11 +1,11 @@
-package screen.gameBoard;
+package FX.screen.gameBoard;
 
 
-import screen.gameBoard.centerPanel.MainBoard;
-import screen.gameBoard.leftPanel.LeftPanel;
-import screen.gameBoard.rightPanel.RightPanel;
-import screen.gameBoard.topPanel.TopPanel;
-import gameControl.ScreenManager;
+import FX.screen.gameBoard.centerPanel.MainBoard;
+import FX.screen.gameBoard.leftPanel.LeftPanel;
+import FX.screen.gameBoard.rightPanel.RightPanel;
+import FX.screen.gameBoard.topPanel.TopPanel;
+import FX.gameControl.ScreenManager;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
@@ -14,8 +14,8 @@ import javafx.scene.layout.Pane;
 import java.util.List;
 import java.util.Map;
 
-import static util.File.getFileName;
-import static util.File.imageLoading;
+import static FX.util.File.getFileName;
+import static FX.util.File.imageLoading;
 
 public class GameBoard extends Pane {
 

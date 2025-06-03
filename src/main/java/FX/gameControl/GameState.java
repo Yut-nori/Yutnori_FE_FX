@@ -1,4 +1,4 @@
-package gameControl;
+package FX.gameControl;
 
 import java.util.ArrayList;
 import java.util.Arrays;

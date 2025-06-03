@@ -1,4 +1,4 @@
-package api;
+package FX.api;
 
 import controller.PlayManager;
 

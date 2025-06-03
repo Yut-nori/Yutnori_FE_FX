@@ -1,16 +1,16 @@
-package screen;
+package FX.screen;
 
-import gameControl.GlobalButtonListener;
-import gameControl.ScreenManager;
+import FX.gameControl.GlobalButtonListener;
+import FX.gameControl.ScreenManager;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import util.ButtonUtil;
-import util.File;
-import util.ImageRenderer;
+import FX.util.ButtonUtil;
+import FX.util.File;
+import FX.util.ImageRenderer;
 
 import java.util.List;
 import java.util.Map;

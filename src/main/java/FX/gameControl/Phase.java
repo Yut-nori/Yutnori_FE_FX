@@ -1,4 +1,4 @@
-package gameControl;
+package FX.gameControl;
 
 public enum Phase {
     BUTTON_CLICK,

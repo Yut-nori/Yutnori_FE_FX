@@ -1,7 +1,8 @@
-package screen.gameBoard.centerPanel;
+package FX.screen.gameBoard.centerPanel;
 
-import screen.gameBoard.rightPanel.UnitIcon;
-import gameControl.GameManager;
+
+
+import FX.gameControl.GameManager;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
@@ -12,9 +13,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static screen.gameBoard.centerPanel.UnitPosition.*;
-import static util.File.getFileName;
-import static util.File.imageLoading;
+import static FX.screen.gameBoard.centerPanel.UnitPosition.*;
+import static FX.util.File.getFileName;
+import static FX.util.File.imageLoading;
 
 public class MainBoard extends Pane {
 
@@ -93,7 +94,7 @@ public class MainBoard extends Pane {
     }
 
     private void addUnit(int playerNum, int unitNum, int x, int y, int groupedNum, Color color) {
-        UnitIcon unit = new UnitIcon(gm, color, playerNum, unitNum, groupedNum);
+        screen.gameBoard.rightPanel.UnitIcon unit = new screen.gameBoard.rightPanel.UnitIcon(gm, color, playerNum, unitNum, groupedNum);
         unit.setLayoutX(x);
         unit.setLayoutY(y);
         getChildren().add(unit);

@@ -1,4 +1,4 @@
-package screen.gameBoard.leftPanel;
+package FX.screen.gameBoard.leftPanel;
 
 import javafx.geometry.Pos;
 import javafx.scene.image.Image;

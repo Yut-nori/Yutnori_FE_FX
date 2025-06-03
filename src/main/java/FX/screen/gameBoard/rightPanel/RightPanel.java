@@ -1,9 +1,9 @@
-package screen.gameBoard.rightPanel;
+package FX.screen.gameBoard.rightPanel;
 
 
-import gameControl.GameManager;
+import FX.gameControl.GameManager;
 import javafx.scene.layout.Pane;
-import util.UIConstants;
+import FX.util.UIConstants;
 
 public class RightPanel extends Pane {
 

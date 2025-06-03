@@ -1,6 +1,8 @@
-import gameControl.GameManager;
-import gameControl.GameState;
-import gameControl.ScreenManager;
+package FX;
+
+import FX.gameControl.GameManager;
+import FX.gameControl.GameState;
+import FX.gameControl.ScreenManager;
 import javafx.application.Application;
 import javafx.stage.Stage;
 

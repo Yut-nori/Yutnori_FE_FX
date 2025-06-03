@@ -1,4 +1,4 @@
-package util;
+package FX.util;
 
 import javafx.geometry.Insets;
 import javafx.scene.control.ComboBox;

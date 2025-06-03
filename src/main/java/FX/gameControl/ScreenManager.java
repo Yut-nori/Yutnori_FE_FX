@@ -1,12 +1,12 @@
-package gameControl;
+package FX.gameControl;
 
-import screen.gameBoard.GameBoard;
+import FX.screen.gameBoard.GameBoard;
 import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import screen.End;
-import screen.Setting;
-import screen.Start;
+import FX.screen.End;
+import FX.screen.Setting;
+import FX.screen.Start;
 
 public class ScreenManager {
     private final Stage stage;

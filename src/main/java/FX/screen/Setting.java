@@ -1,8 +1,8 @@
-package screen;
+package FX.screen;
 
-import gameControl.GameManager;
-import gameControl.GlobalButtonListener;
-import gameControl.ScreenManager;
+import FX.gameControl.GameManager;
+import FX.gameControl.GlobalButtonListener;
+import FX.gameControl.ScreenManager;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
@@ -10,15 +10,15 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
-import util.ComboBoxUtil;
-import util.File;
-import util.ImageRenderer;
+import FX.util.ComboBoxUtil;
+import FX.util.File;
+import FX.util.ImageRenderer;
 
 import java.util.List;
 import java.util.Map;
 
-import static util.ButtonUtil.createButtonIfExists;
-import static util.File.getFileName;
+import static FX.util.ButtonUtil.createButtonIfExists;
+import static FX.util.File.getFileName;
 
 public class Setting extends Pane {
 

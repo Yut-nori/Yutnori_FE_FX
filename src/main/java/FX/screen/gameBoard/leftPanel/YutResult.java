@@ -1,10 +1,10 @@
-package screen.gameBoard.leftPanel;
+package FX.screen.gameBoard.leftPanel;
 
 import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import util.UIConstants;
+import FX.util.UIConstants;
 
 public class YutResult extends Pane {
 

@@ -1,10 +1,10 @@
-package screen.gameBoard.rightPanel;
+package FX.screen.gameBoard.rightPanel;
 
 
-import gameControl.GameManager;
+import FX.gameControl.GameManager;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
-import util.UIConstants;
+import FX.util.UIConstants;
 
 public class TrackerPanel extends VBox {
 

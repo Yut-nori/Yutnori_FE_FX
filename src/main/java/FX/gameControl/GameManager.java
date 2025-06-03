@@ -1,9 +1,9 @@
-package gameControl;
+package FX.gameControl;
 
-import screen.gameBoard.centerPanel.MainBoard;
-import screen.gameBoard.leftPanel.LeftPanel;
-import screen.gameBoard.rightPanel.RightPanel;
-import screen.gameBoard.topPanel.TopPanel;
+import FX.screen.gameBoard.centerPanel.MainBoard;
+import FX.screen.gameBoard.leftPanel.LeftPanel;
+import FX.screen.gameBoard.rightPanel.RightPanel;
+import FX.screen.gameBoard.topPanel.TopPanel;
 import javafx.scene.layout.Pane;
 
 import java.util.Arrays;
@@ -18,13 +18,13 @@ public class GameManager {
     private ScreenManager screenManager;
 
     /** API 객체 변수 **/
-    private final api.OptionAPI optionAPI;
-    private final api.GameAPI gameAPI;
+    private final FX.api.OptionAPI optionAPI;
+    private final FX.api.GameAPI gameAPI;
 
     public GameManager(GameState gameState) {
         this.gameState = gameState;
-        this.optionAPI = new api.OptionAPI();
-        this.gameAPI = new api.GameAPI();
+        this.optionAPI = new FX.api.OptionAPI();
+        this.gameAPI = new FX.api.GameAPI();
     }
 
     public void setScreenManager(ScreenManager screenManager) {

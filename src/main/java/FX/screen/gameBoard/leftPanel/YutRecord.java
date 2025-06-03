@@ -1,7 +1,7 @@
-package screen.gameBoard.leftPanel;
+package FX.screen.gameBoard.leftPanel;
 
 
-import gameControl.GameManager;
+import FX.gameControl.GameManager;
 import javafx.scene.Cursor;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
@@ -9,7 +9,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
-import util.UIConstants;
+import FX.util.UIConstants;
 
 public class YutRecord extends Pane {
 

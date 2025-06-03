@@ -1,13 +1,13 @@
-package screen.gameBoard.rightPanel;
+package FX.screen.gameBoard.rightPanel;
 
-import gameControl.GameManager;
+import FX.gameControl.GameManager;
 import javafx.scene.Group;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.scene.text.Font;
-import util.UIConstants;
+import FX.util.UIConstants;
 
 public class UnitIcon extends Group {
 

@@ -1,11 +1,11 @@
-package screen.gameBoard.rightPanel;
+package FX.screen.gameBoard.rightPanel;
 
-import gameControl.GameManager;
-import gameControl.GlobalButtonListener;
+import FX.gameControl.GameManager;
+import FX.gameControl.GlobalButtonListener;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
 import javafx.scene.text.Font;
-import util.UIConstants;
+import FX.util.UIConstants;
 
 public class MenuPanel extends Pane {
 

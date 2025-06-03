@@ -1,6 +1,6 @@
-package screen.gameBoard.rightPanel;
+package FX.screen.gameBoard.rightPanel;
 
-import gameControl.GameManager;
+import FX.gameControl.GameManager;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Label;
@@ -8,7 +8,7 @@ import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import util.UIConstants;
+import FX.util.UIConstants;
 
 public class PlayerUnitPanel extends VBox {
 
@@ -54,7 +54,7 @@ public class PlayerUnitPanel extends VBox {
         for (int i = 0; i < unitPositions[0].length; i++) {
             int position = unitPositions[playerIndex][i];
             if (position == -1) {
-                UnitIcon icon = new UnitIcon(gm, unitColor, playerIndex, i, 1);
+                screen.gameBoard.rightPanel.UnitIcon icon = new screen.gameBoard.rightPanel.UnitIcon(gm, unitColor, playerIndex, i, 1);
                 circlePane.getChildren().add(icon);
             }
         }

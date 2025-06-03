@@ -1,7 +1,7 @@
-package screen;
+package FX.screen;
 
-import gameControl.GlobalButtonListener;
-import gameControl.ScreenManager;
+import FX.gameControl.GlobalButtonListener;
+import FX.gameControl.ScreenManager;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.control.Button;
@@ -11,14 +11,14 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
-import util.ButtonUtil;
-import util.ImageRenderer;
+import FX.util.ButtonUtil;
+import FX.util.ImageRenderer;
 
 import java.util.List;
 import java.util.Map;
 
-import static util.File.getFileName;
-import static util.File.imageLoading;
+import static FX.util.File.getFileName;
+import static FX.util.File.imageLoading;
 
 public class End extends Pane {
 
