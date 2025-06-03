@@ -58,7 +58,7 @@ public class ThrowControl extends Pane {
         int recordRadius = 80;
         int showResults = gm.getGameState().getCountClickedButton();
 
-        screen.gameBoard.leftPanel.YutRecord[] yutRecords = new screen.gameBoard.leftPanel.YutRecord[6];
+        YutRecord[] yutRecords = new YutRecord[6];
         int[] countYutResults = new int[6];
 
         for (int i = 0; i < showResults; i++) {
@@ -70,9 +70,9 @@ public class ThrowControl extends Pane {
         for (int i = 0; i < 6; i++) {
             int yutResult = (i == 0) ? -1 : i;
             if (countYutResults[i] == 0) {
-                yutRecords[i] = new screen.gameBoard.leftPanel.YutRecord();
+                yutRecords[i] = new YutRecord();
             } else {
-                yutRecords[i] = new screen.gameBoard.leftPanel.YutRecord(gm, yutResult, countYutResults[i]);
+                yutRecords[i] = new YutRecord(gm, yutResult, countYutResults[i]);
             }
 
             // 위치 설정 (3열 정렬)
