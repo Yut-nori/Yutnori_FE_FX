@@ -16,9 +16,12 @@ public class MainFX extends Application {
         GameManager gm = new GameManager(new GameState());
         ScreenManager sm = new ScreenManager(primaryStage, gm);
         gm.setScreenManager(sm);
+
+        primaryStage.show();
     }
 
     public static void main(String[] args) {
         launch(args);
+        System.exit(1);
     }
 }
