@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'com.github.johnrengelman.shadow' version '8.1.1' // ✅ Shadow plugin 추가
 }
 
 repositories {
@@ -17,17 +18,28 @@ javafx {
 }
 
 dependencies {
-    implementation project(':backend')
+    implementation project(':backend') // 내부 모듈 의존성
 }
 
 application {
-    mainClass = 'MainFX'
+    mainClass = 'FX.MainFX' // 패키지 포함 시 'com.example.MainFX' 형식 필요
 }
 
-run {
-    // jvmArgs 불필요, plugin이 자동으로 설정
+// ShadowJar 설정
+tasks.named('shadowJar') {
+    archiveClassifier.set('all') // shadow jar 이름에 -all 붙도록 설정
+    manifest {
+        attributes 'Main-Class': application.mainClass
+    }
 }
 
+// 기본 jar 대신 shadow jar를 사용할 경우:
+jar {
+    enabled = false
+}
+build.dependsOn shadowJar // build 시 shadowJar도 함께 생성
+
+// UTF-8 설정
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'
 }
