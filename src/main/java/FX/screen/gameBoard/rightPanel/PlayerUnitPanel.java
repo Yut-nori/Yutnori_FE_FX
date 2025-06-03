@@ -54,7 +54,7 @@ public class PlayerUnitPanel extends VBox {
         for (int i = 0; i < unitPositions[0].length; i++) {
             int position = unitPositions[playerIndex][i];
             if (position == -1) {
-                screen.gameBoard.rightPanel.UnitIcon icon = new screen.gameBoard.rightPanel.UnitIcon(gm, unitColor, playerIndex, i, 1);
+                UnitIcon icon = new UnitIcon(gm, unitColor, playerIndex, i, 1);
                 circlePane.getChildren().add(icon);
             }
         }

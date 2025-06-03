@@ -29,7 +29,7 @@ public class PlayerUnitTrackerPanel extends Pane {
         // [3] TrackerPanel 생성 (플레이어 수 및 유닛 수 기반)
         int totalPlayers = gm.getGameState().getTotalPlayerNumber();
         int unitsPerPlayer = gm.getGameState().getUnitNumberPerPlayer();
-        screen.gameBoard.rightPanel.TrackerPanel trackerPanel = new screen.gameBoard.rightPanel.TrackerPanel(gm, totalPlayers, unitsPerPlayer);
+        TrackerPanel trackerPanel = new TrackerPanel(gm, totalPlayers, unitsPerPlayer);
         trackerPanel.setLayoutX(0);
         trackerPanel.setLayoutY(140);
         trackerPanel.setPrefSize(UIConstants.RIGHT_PANEL_WIDTH, 440);

@@ -3,6 +3,7 @@ package FX.screen.gameBoard.centerPanel;
 
 
 import FX.gameControl.GameManager;
+import FX.screen.gameBoard.rightPanel.UnitIcon;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
@@ -94,7 +95,7 @@ public class MainBoard extends Pane {
     }
 
     private void addUnit(int playerNum, int unitNum, int x, int y, int groupedNum, Color color) {
-        FX.screen.gameBoard.rightPanel.UnitIcon unit = new FX.screen.gameBoard.rightPanel.UnitIcon(gm, color, playerNum, unitNum, groupedNum);
+        UnitIcon unit = new UnitIcon(gm, color, playerNum, unitNum, groupedNum);
         unit.setLayoutX(x);
         unit.setLayoutY(y);
         getChildren().add(unit);
